@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <form action="" autocomplete="off" method="post">
+      <fieldset>
+        <legend>Cadastro de Usuário</legend>
+        <div class="inputBox">
+          <input type="text" name="name" id="name" class="inputUser" required>
+          <label for="name" class="labelInput">Nome Completo</label>
+        </div>
+        <div class="inputBox">
+          <input type="email" name="email" id="email" class="inputUser" required>
+          <label for="email" class="labelInput">E-mail</label>
+        </div>
+        <div class="inputBox">
+          <input type="tel" name="phone" id="phone" class="inputUser" required>
+          <label for="phone" class="labelInput">Telefone</label>
+        </div>
+        <p>Sexo:</p>
+          <input type="radio" name="sexo" id="masc" required>
+          <label for="masc">Masculino</label>
+          <br>
+          <input type="radio" name="sexo" id="fem" required>
+          <label for="fem">Feminino</label>
+          <br>
+          <input type="radio" name="sexo" id="outro" required>
+          <label for="outro">Outro</label>
+          <br> <br>
+        <div class="inputBox">
+          <input type="password" name="senha" id="senha" minlength="8" class="inputUser" required>
+          <label for="senha" class="labelInput">Senha</label>
+        </div>
+          <input type="submit" name="submit" id="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
